@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="education_design.css">
+    <script src="control.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="skills.js"></script>
+</head>
+<body style="background-image:url('lib.png');background-repeat: no-repeat;background-size: cover;overflow: hidden;width: 100vw;height: 100vh;" onload="myFunc()">
+    <div id="H_icon"><a href="FrontPage.html"><ion-icon id="H_icon" name="home"></ion-icon></a></div>
+    <script>
+        function myFunc(){
+            document.getElementById("edu1").innerHTML=e1;
+            document.getElementById("edu2").innerHTML=e2;
+            document.getElementById("edu3").innerHTML=e3;
+            }
+        </script>
+    <center><div id="cover">
+        <table>
+            <tr><td><b>High School passed from:</b><p id="edu1"></p></td></tr>
+            <tr><td><b>Graduated from:</b><p id="edu2"></p></td></tr>
+            <tr><td><b>Post Graduation from:</b><p id="edu3"></p></td></tr>
+        </table>
+    </div></center>
+    <center><div id="appear"><h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: burlywood;">Education</h1></div></center>
+    
+    <script>
+        $(document).ready(function(){
+            $("#appear").click(function(){
+                $(this).slideUp(2000);
+            })
+            $("#cover").click(function(){
+                $("#appear").slideDown(2000);
+            })
+           
+        })
+    </script>
+    
+</body>
+</html>

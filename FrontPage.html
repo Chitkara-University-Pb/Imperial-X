@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hackathon Project</title>
+    <link rel="stylesheet" href="Front.css">
+    <script src="frontcontrol.js"></script>
+    <script src="skills.js"></script>
+</head>
+<body onload="myFunc()">
+    <script>
+        function myFunc(){
+            document.getElementById("Uname").innerHTML=x;
+        }
+
+    </script>
+
+        <a href="experience.html"><img src="Picsart_22-04-22_22-21-45-957.png" id="experience"></a>
+        <a href="skills.html"><img src="Picsart_22-04-22_19-49-20-009.png" id="skill"></a>
+        <a href="approach.html"><img src="Picsart_22-04-23_01-34-57-042.png" id="approach"></a>
+        <div id="U-name"><p id="Uname"></p></div>
+        <a href="education.html"><img src="Picsart_22-04-23_04-06-28-537.png" id="edu"></a>
+        <img src="Picsart_22-04-23_05-31-25-165.png" id="inst" onclick="on()"><span><p id="inst-p" style="color: aliceblue;font-size: 12px;"><b>See Instruction</b></p></span>
+        <div id="overlay" onclick="off()" > <div id="inover">Click here to view my skills</div>
+        <div id="arr-1"></div>
+        <div id="arr-2"></div>
+        <div id="arr-3"></div>
+        <div id="arr-4"></div>
+        <div id="inover2">Click here to view my experience</div>
+        <div id="inover3">Click here to view my academic details</div>
+        <div id="inover4">Click here to approach me</div>
+        </div>
+
+</body>
+</html>

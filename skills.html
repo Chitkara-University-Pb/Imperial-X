@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="skills.js"></script>
+
+</head>
+<style>
+    body{
+        background-image: url("pic-2.jpg");
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        height: 90vh;
+
+    }
+    #H_icon{
+    float: left;font-size: 50px; border: aliceblue;background-color: rgb(0, 0, 0);color: white;
+    margin-left: -5px;
+    margin-top: -26px;
+  }
+    #H_icon:hover{background-color: goldenrod;color: black;
+  }
+    header{
+        text-align: center;
+        font-size: 27px;
+        margin-top: 80px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    .container{
+        background-image: linear-gradient( rgb(149, 244, 253), rgb(175, 232, 255),azure, rgb(242, 199, 255));
+        margin-top: 30px;
+        width: 100vw;
+        margin-left: -10px;
+        border-radius: 100px;
+        height: 300px;
+        position: fixed;
+        opacity: 0.9;
+    }
+    .skill-1{
+        background-image: linear-gradient(#65c6ff,#6ddcf8,#a8ffdb);
+        width: 190px;
+        margin-left: 60px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-2{
+        background-image: linear-gradient(#65c6ff,#6ddcf8,#a8ffdb);
+        width: 240px;
+        margin-left: 285px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-3{
+        background-image: linear-gradient(#65c6ff,#6ddcf8,#a8ffdb);
+        width: 190px;
+        margin-left: 550px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-4{
+        background-image: linear-gradient(#65c6ff,#6ddcf8,#a8ffdb);
+        width: 190px;
+        margin-left: 770px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-5{
+        background-image: linear-gradient(#65c6ff,#6ddcf8,#a8ffdb);
+        width: 220px;
+        margin-left: 980px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-6{
+        background-image: linear-gradient( aliceblue,#ffa1ef,#fa53fa);
+        width: 220px;
+        margin-left: 160px;
+        margin-top: 180px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-7{
+        background-image: linear-gradient( aliceblue,#ffa1ef,#fa53fa);
+        width: 220px;
+        margin-left: 420px;
+        margin-top: 180px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-8{
+        background-image: linear-gradient( aliceblue,#ffa1ef,#fa53fa);
+        width: 180px;
+        margin-left: 680px;
+        margin-top: 180px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+    .skill-9{
+        background-image: linear-gradient( aliceblue,#ffa1ef,#fa53fa);
+        width: 230px;
+        margin-left: 920px;
+        margin-top: 180px;
+        border-radius: 50px;
+        height: 80px;
+        position: fixed;
+        transition: transform 0.8s;
+    }
+
+    .skill-1:hover{
+        background-image:linear-gradient(#ffa7a3,#6eddfe);
+        transform: scale(1.1);
+    }
+    .skill-2:hover{
+        background-image:linear-gradient(#96ffb0,#ca7bce);
+        transform: scale(1.1);
+    }
+    .skill-3:hover{
+        background-image:linear-gradient(#fa68aa,#d9ff97);
+        transform: scale(1.1);
+    }
+    .skill-4:hover{
+        background-image:linear-gradient(rgb(241, 248, 117),rgb(179, 195, 253));
+        transform: scale(1.1);
+    }
+    .skill-5:hover{
+        background-image:linear-gradient(rgb(150, 255, 234),white);
+        transform: scale(1.1);
+    }
+    .skill-6:hover{
+        background-image:linear-gradient(rgb(225, 255, 232),rgb(155, 255, 217));
+        transform: scale(1.1);
+    }
+    .skill-7:hover{
+        background-image:linear-gradient(rgb(248, 255, 171),gold,orange);
+        transform: scale(1.1);
+    }
+    .skill-8:hover{
+        background-image:linear-gradient(rgb(213, 176, 255),rgb(140, 255, 192));
+        transform: scale(1.1);
+    }
+    .skill-9:hover{
+        background-image:linear-gradient(rgb(255, 112, 112),rgb(255, 186, 95),rgb(255, 241, 172));
+        transform: scale(1.1);
+    }
+    p{
+        color: rgb(0, 0, 0);
+        font-size: 19px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-family:cursive;
+    }
+</style>
+<body onload="myFunc()">
+    <script>
+    function myFunc(){
+    document.getElementById("skill-1").innerHTML=x1;
+    document.getElementById("skill-2").innerHTML=x2;
+    document.getElementById("skill-3").innerHTML=x3;
+    document.getElementById("skill-4").innerHTML=x4;
+    document.getElementById("skill-5").innerHTML=x5;
+    document.getElementById("skill-6").innerHTML=x6;
+    document.getElementById("skill-7").innerHTML=x7;
+    document.getElementById("skill-8").innerHTML=x8;
+    document.getElementById("skill-9").innerHTML=x9;
+}
+    </script>
+    <div id="H_icon"><a href="FrontPage.html"><ion-icon id="H_icon" name="home"></ion-icon></a></div>
+    <header>
+        <h1><b>Skills</b></h1>
+    </header>
+    <div class="container">
+        <div class="skill-1">
+            <p id="skill-1"></p>
+        </div>
+        <div class="skill-2">
+            <p id="skill-2"></p>
+        </div>
+        <div class="skill-3">
+            <p id="skill-3"></p>
+        </div>
+        <div class="skill-4">
+            <p id="skill-4"></p>
+        </div>
+        <div class="skill-5">
+            <p id="skill-5"></p>
+        </div>
+        <div class="skill-6">
+            <p id="skill-6"></p>
+        </div>
+        <div class="skill-7">
+            <p id="skill-7"></p>
+        </div>
+        <div class="skill-8">
+            <p id="skill-8"></p>
+        </div>
+        <div class="skill-9">
+            <p id="skill-9"></p>
+        </div>
+    </div>
+</body>
+</html>
